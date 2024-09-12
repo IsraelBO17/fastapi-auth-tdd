@@ -5,7 +5,7 @@ from app.config.settings import get_settings
 from app.config.database import Base
 
 # Import all models
-from app.models.user import *  # noqa: F403
+from app.models import *  # noqa: F401, F403
 
 
 settings = get_settings()
